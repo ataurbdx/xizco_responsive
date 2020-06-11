@@ -1,0 +1,120 @@
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .slider_content {
+        padding-bottom: 180px;
+        padding-top: 180px;
+    }
+
+    .faq_body {
+        width: 78.5%;
+    }
+
+    .single_price .theme_btn {
+        padding: 12px 16px;
+    }
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contact {
+        display: none;
+    }
+
+    .navbar-toggler {
+        color: white !important;
+        font-size: 41px;
+        border: 0;
+    }
+
+    .slider_content {
+        padding-bottom: 125px;
+        padding-top: 80px;
+    }
+
+    .devider {
+        display: none;
+    }
+
+    .business_help {
+        padding-top: 12px;
+    }
+
+    .faq_header h4 {
+        width: 86%;
+    }
+
+    .faq_body {
+        width: 85.5%;
+    }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contact {
+        display: none;
+    }
+
+    .navbar-toggler {
+        color: white !important;
+        font-size: 41px;
+        border: 0;
+    }
+
+    .slider_content {
+        padding-bottom: 125px;
+        padding-top: 80px;
+    }
+
+    .devider {
+        display: none;
+    }
+
+    .faq_header h4 {
+        width: 86%;
+    }
+
+    .faq_body {
+        width: 81.2%;
+    }
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .contact {
+        display: none;
+    }
+
+    .navbar-toggler {
+        color: white !important;
+        font-size: 41px;
+        border: 0;
+    }
+
+    .header_top_text {
+        display: none;
+    }
+
+    .header_link {
+        text-align: center;
+    }
+
+    .slider_content {
+        padding-bottom: 125px;
+        padding-top: 80px;
+    }
+
+    .devider {
+        display: none;
+    }
+
+    .faq_header h4 {
+        width: 86%;
+    }
+
+    .faq_body {
+        width: 70.5%;
+    }
+}

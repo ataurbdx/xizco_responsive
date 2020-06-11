@@ -1,0 +1,155 @@
+/*IMPORTED GOOGLE FONTS START*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/*IMPORTED GOOGLE FONTS ENDS*/
+
+
+
+
+
+
+
+
+
+/*COMMON CSS START*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hind', sans-serif;
+    line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+p{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    line-height: 21px;
+}
+
+ul{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/*
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+*/
+
+/*
+.custom_container{
+    padding: 0 70px;
+}
+*/
+
+.clr{
+    clear: both;
+}
+
+img{
+/*    margin-bottom: -5px;*/
+}
+
+
+.bg_cover{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.active{
+}
+
+button:focus{
+    outline: 0;
+}
+
+
+
+/*all button are here*/
+
+.theme_btn{
+    color: #000757;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 12px 24px;
+    background: transparent;
+    border: 1px solid #000757;
+    transition: all .3s linear;
+}
+.theme_btn:hover{
+    color: white;
+    border: 1px solid #0083ff;
+    background: #0083ff;
+}
+.btn_active{
+    color: white;
+    border: 1px solid #0083ff;
+    background: #0083ff;
+}
+
+
+/*section tittle are here*/
+
+section{
+    padding: 84px 0;
+}
+
+.section_tittle{
+/*    background: red;*/
+    padding-top: 3px;
+    padding-bottom: 37px;
+}
+.section_tittle h2{
+    font-size: 30px;
+    color: #000757;
+    text-transform: uppercase;
+    line-height: 44px;
+    padding-bottom: 8px;
+}
+.section_tittle span{
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background: #eaeaea;
+    position: relative;
+}
+.section_tittle span:before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background: #0083ff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*END OF COMMON CSS*/
+
+
+
+
+
+
+

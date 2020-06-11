@@ -1,0 +1,1200 @@
+/*================================
+        HEADER CSS STAR
+================================*/
+
+.header_part {}
+
+.header_top {
+    background: #000757;
+    color: white;
+
+}
+
+.header_top_text {
+    padding: 0;
+    margin: 0;
+    padding: 18px 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.header_link {
+    text-align: end;
+}
+
+.header_link a i {
+
+    text-align: center;
+    width: 29px;
+    height: 29px;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 29px;
+    margin: 10px 0;
+    margin-left: 10px;
+    border: 1px solid white;
+    transition: all .3s linear;
+}
+
+.header_link a i:hover {
+    background: #0083ff;
+    border: 1px solid #0083ff;
+}
+
+.header {
+    /*    padding: 34px 0;*/
+    padding-top: 32px;
+    padding-bottom: 31px;
+}
+
+.header_contact {}
+
+.contact {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 1;
+    margin-left: 37px;
+}
+
+.contact_icone {
+    float: left;
+    font-size: 30px;
+    margin-right: 28px;
+}
+
+.contact_icone i {
+    color: #0083ff;
+}
+
+.contact_content {
+    float: right;
+    font-family: 'Hind', sans-serif;
+    font-size: 14px;
+    color: #666666;
+}
+
+.contact_content span {
+    line-height: 12px;
+}
+
+.main_menu {
+    background: #000757;
+    color: white;
+    height: 50px;
+    overflow: hidden;
+}
+.main_menu .search_bar{
+    position: absolute;
+    left: 80.2%;
+    top: 0;
+    z-index: 999;
+}
+
+.menu_search{
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 49.9%;
+    width: 59%;
+/*    background: red;*/
+    
+    
+    transform: translate(-50%, 120%);
+    transition: all .3s linear;
+}
+.menu_search input{
+    width: 100%;
+}
+.search_active{
+    transform: translate(-50%, -50%);
+}
+
+.menu_bar {
+    background: gray;
+    text-align: center;
+}
+
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    padding: 18px 19px;
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 0px;
+    background: white;
+    transition: all .3s linear;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link:hover:before {
+    width: 30px;
+}
+
+.search_bar {
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 18px 19px;
+}
+.navbar-nav{
+    margin-top: 0;
+    transition: all .3s linear;
+}
+.menu_hide{
+    margin-top: -64px;
+}
+
+
+/*================================
+        HEADER CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================
+        BANNER CSS START
+================================*/
+
+.banner_overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 7, 87, 0.6);
+    color: white;
+}
+
+.slider_content {
+    padding-bottom: 261px;
+    padding-top: 226px;
+}
+
+.slider_content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60;
+    font-weight: 700;
+/*    margin-top: 226px;*/
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    line-height: 76px;
+}
+
+.slider_content .theme_btn {
+    color: white;
+    border: 2px solid #0083ff;
+    background: #0083ff;
+}
+
+.banner_area .slick-dots {
+    margin-top: -71px;
+    position: absolute;
+    left: 9%;
+    z-index: 999;
+}
+
+.banner_area .slick-dots li {
+    display: inline-block;
+}
+
+.banner_area .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #f5f5f7;
+    background: transparent;
+    margin-right: 6px;
+    transition: all .3s linear;
+}
+
+.banner_area .slick-dots li.slick-active button {
+    background: #0083ff;
+}
+
+/*================================
+        BANNER CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================
+        ABOUT CSS START
+================================*/
+
+.about_area {
+	padding-top: 123px;
+	padding-bottom: 78px;
+}
+
+.business_wrap{
+    margin-top: -3px;
+}
+.business {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin: 13px 0;
+
+}
+
+.business:hover .icon {
+    background: #0083ff;
+}
+
+.business .icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #000757;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 7px;
+    transition: all .3s linear;
+}
+
+.business .text {
+    box-sizing: border-box;
+    /*    background: blue;*/
+    width: calc(100% - 50px);
+    margin-left: auto;
+    padding-left: 32px;
+    text-align: justify;
+
+}
+
+.business .text h3 {
+    padding-bottom: 21px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000757;
+}
+
+.business .text p {
+    line-height: 21px;
+}
+
+
+.devider {
+    width: 2px;
+    height: 300px;
+    background: #eaeaea;
+    padding: 150px 1px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.business_help {}
+
+.business_help .text h3 {
+    padding-bottom: 21px;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #000757;
+}
+
+.business_help .text p {
+    line-height: 21px;
+    padding-bottom: 37px;
+    text-align: justify;
+}
+
+
+
+/*================================
+        ABOUT CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================
+        SERVICE CSS START
+================================*/
+
+.service_part {
+    background: #f5f8ff;
+}
+
+.single_service {
+    /*    background: red;*/
+    position: relative;
+    margin: 7px 0;
+    padding-bottom: 22px;
+    padding-top: 8px;
+}
+
+.single_service:hover .theme_btn,
+.single_service:hover .icon {
+    background: #0083ff;
+    border: 1px solid #0083ff;
+    color: white;
+}
+
+.single_service .icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background: #000757;
+    text-align: center;
+    border: 1px solid #000757;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s linear;
+
+}
+
+.single_service .text {
+    padding-top: 52px;
+}
+
+.single_service .text h3 {
+    padding: 26px 0;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000757;
+}
+
+.single_service .text p {
+    line-height: 21px;
+    padding-bottom: 39px;
+    text-align: center;
+}
+
+/*================================
+        SERVICE CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+/*================================
+        WORK CSS START
+================================*/
+
+.work_part .section_tittle {
+    margin: 0 40px;
+}
+
+.work_btn {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.work_btn button {
+    margin: 5px;
+}
+
+.work_img {
+    margin: 15px 0;
+}
+
+.work_img img {}
+
+.work_img .overlay {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 7, 87, 0.6);
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.work_img:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay_elements a i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #0083ff;
+    color: white;
+    border-radius: 50%;
+    margin: 8px;
+
+}
+
+.overlay_elements h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 25px 0;
+}
+
+/*================================
+        WORK CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+/*================================
+        COUNTERUP CSS START
+================================*/
+
+.counterup_area {}
+
+.counter_overlay {
+    background: rgba(0, 7, 87, 0.6);
+    padding: 80px 0;
+    padding-bottom: 70px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.single_counter {
+    padding: 8px 0;
+}
+
+.single_counter i {
+    width: 104px;
+    height: 104px;
+    line-height: 104px;
+    border-radius: 50%;
+    background: #000757;
+    margin-bottom: 8px;
+}
+
+.single_counter h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 24px;
+    ;
+    padding-top: 45px;
+}
+
+.single_counter span {
+    font-weight: 400px;
+    line-height: 21px;
+}
+
+/*================================
+        COUNTERUP CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+/*================================
+        TEAM CSS START
+================================*/
+
+.single_team {
+    border: 1px solid #eaeaea;
+    padding: 0 26px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    margin: 15px 0;
+    transition: all .3s linear;
+}
+
+.single_team:hover {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    background: #f5f8ff;
+}
+
+.team_img {
+    width: 128px;
+    height: 128px;
+    border: 5px solid #eaeaea;
+    border-radius: 50%;
+    background: #eaeaea;
+    display: block;
+    overflow: hidden;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+
+.team_img img {}
+
+.team_text {
+    padding-top: 158px;
+    color: #666666;
+}
+
+.team_icon i {
+    height: 29px;
+    width: 29px;
+    line-height: 29px;
+    background: transparent;
+    border: 1px solid #070e5c;
+    border-radius: 50%;
+    margin: 0 3px;
+    margin-bottom: 26px;
+    color: #000757;
+    transition: all .3s linear;
+}
+
+.team_icon i:hover {
+    background: #0083ff;
+    border: 1px solid #0083ff;
+    color: white;
+
+}
+
+.team_text {}
+
+.team_text h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+.team_text h5.name {
+    color: #000757;
+}
+
+.team_text p {
+    font-size: 14px;
+    line-height: 21px;
+    padding-top: 21px;
+    color: #666666;
+}
+
+/*================================
+        TEAM CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+
+/*================================
+        FEEDBACK CSS START
+================================*/
+
+.feedback_area {
+    background: #f5f8ff;
+}
+
+.feedback_area .section_tittle span:before {
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.single_client {
+    position: relative;
+    margin: 15px 0;
+}
+
+.client_img {
+    width: 99px;
+    height: 99px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    background: #eaeaea;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+.review_text {
+    padding: 23px 20px 22px 77px;
+    border: 1px solid #eaeaea;
+    width: calc(100% - 50px);
+    margin-left: auto;
+    background: white;
+}
+
+.review_text p {
+    font-size: 14px;
+    line-height: 21px;
+    padding-bottom: 15px;
+    color: #666666;
+}
+
+.review_text span,
+.review_text h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #666666;
+}
+
+.review_text h5 {
+    color: #000757;
+}
+
+.feedback_area .slick-dots {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.feedback_area .slick-dots li {
+    display: inline-block;
+
+}
+
+.feedback_area .slick-dots li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #f5f5f7;
+    background: #000757;
+    margin-right: 6px;
+    transition: all .3s linear;
+}
+
+.feedback_area .slick-dots li.slick-active button {
+    background: #0083ff;
+}
+
+
+
+
+
+
+
+
+
+.faq_area {}
+
+.single_faq {
+    padding-bottom: 15px;
+}
+
+.faq_header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+.faq_header button {
+    width: 70px;
+    height: 70px;
+    background: transparent;
+    border: 1px solid #000757;
+    position: relative;
+}
+
+.faq_header span {
+    display: inline-block;
+    background: #000757;
+}
+
+.faq_header button span:nth-of-type(1) {
+    width: 15px;
+    height: 5px;
+}
+
+.faq_header button span:nth-of-type(2) {
+    width: 5px;
+    height: 0px;
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    transition: all .3s linear;
+}
+
+.faq_header button.active span:nth-of-type(2) {
+    height: 16px;
+}
+
+.faq_header h4 {
+    /*    background-color: red;*/
+    text-transform: uppercase;
+    color: #000757;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #000757;
+    line-height: 68px;
+    margin-left: 30px;
+    padding-left: 20px;
+    width: 82%;
+}
+
+.faq_btn {}
+
+.faq_body {
+    width: 81.5%;
+    border: 1px solid #000757;
+    padding: 25px 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+
+/*================================
+        FEEDBACK CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+/*================================
+        PRICING CSS START
+================================*/
+
+.pricing_area {}
+
+.single_price {
+    border: 1px solid #eaeaea;
+    position: relative;
+    transition: all .3s linear;
+    margin-bottom: 34px;
+    margin-top: 15px;
+}
+
+.single_price:hover .price {
+    background: #0083ff;
+}
+
+.single_price h4 {
+    font-size: 24px;
+    color: #000757;
+    background: #f5f8ff;
+    padding-top: 27px;
+    padding-bottom: 84px;
+}
+
+.price_amount {
+    position: relative;
+    padding: 45px 0;
+}
+
+.price {
+    width: 120px;
+    height: 120px;
+    background: #000757;
+    color: white;
+    line-height: 120px;
+    border: 5px solid #eaeaea;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 50%);
+    transition: all .3s linear;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price .amount {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.price .date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.single_price p {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.last_price {
+    margin-bottom: 48px;
+}
+
+.single_price .theme_btn {
+    font-weight: 500;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    padding: 12px 23px;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+.single_price:hover .theme_btn {
+    background: #0083ff;
+    border: 1px solid #0083ff;
+    color: white;
+}
+
+
+/*================================
+        PRICING CSS END
+================================*/
+
+
+
+
+
+
+
+
+/*================================
+        MESSAGE CSS START
+================================*/
+
+.message_area {}
+
+.message_cover {}
+
+.message_overlay {
+    background: rgba(0, 7, 87, 0.6);
+    padding: 80px 0;
+    padding-bottom: 85px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.message_area .section_tittle h2 {
+    color: white;
+}
+
+.form_data {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Hind', sans-serif;
+    color: white;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    padding: 7px 0;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.form_btn.theme_btn {
+    color: white;
+    background: #0083ff;
+    margin-top: 15px;
+    border: 1px solid #0083ff;
+    margin-bottom: 15px;
+}
+
+.message_area input::placeholder {
+    color: white;
+}
+
+/*================================
+        MESSAGE CSS END
+================================*/
+
+
+
+
+
+
+
+
+/*================================
+        NEWS CSS START
+================================*/
+
+
+.single_news {
+    transition: all .3s linear;
+    margin: 15px 0;
+}
+
+.single_news:hover {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.single_news img {}
+
+.news_text {
+    padding: 30px;
+    font-size: 14px;
+    border: 1px solid #eaeaea;
+    border-top: 0;
+    padding-bottom: 43px;
+}
+
+.news_text a {
+    color: white;
+}
+
+.news_text a:hover {
+    color: white;
+}
+
+.time_stamp {}
+
+.time_stamp i {
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+.time_stamp span {
+    padding-right: 14px;
+}
+
+.news_text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000757;
+    padding: 27px 0;
+}
+
+.news_text p {
+    line-height: 21px;
+    margin-top: -3px;
+    padding-bottom: 38px;
+}
+
+/*================================
+        NEWS CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+
+/*================================
+        INVOLVEMET CSS START
+================================*/
+
+.involvement_area {
+    background: #f5f8ff;
+}
+
+.involvement_area .section_tittle h2 {
+    /*    padding-right: 183px;*/
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 3px;
+    padding-bottom: 12px;
+}
+
+.involvement_area .section_tittle p {
+    margin-bottom: -28px;
+}
+
+.involvement_area .theme_btn:hover,
+.involvement_area .theme_btn {
+    color: white;
+}
+
+/*================================
+        INVOLVEMET CSS END
+================================*/
+
+
+
+
+
+
+
+
+
+
+/*================================
+        FOOTER CSS START
+================================*/
+
+.footer_area{
+    background: #000757;
+    color: white;
+    border-bottom: 1px solid #ffffff;
+}
+.footer_content{
+    margin-top: 13px;
+}
+.footer_header{}
+.footer_header h4{
+/*    padding-top: 5px;*/
+    padding-bottom: 11px;
+/*    background: red;*/
+    position: relative;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.footer_header h4:after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: white;
+}
+.footer_elements{
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+.footer_elements p{
+    
+    padding-bottom: 23px;
+}
+.footer_elements form{
+    background: #ffffff;
+    padding: 5px;
+}
+.footer_elements form input{
+    width: 100%;
+    color: #666666;
+    padding-left: 6px;
+}
+.footer_elements form input.form_data{
+    height: 100%;
+    width: 100%;
+    border-bottom: 0;
+}
+.footer_elements form .theme_btn.form_btn{
+    margin: 0;
+    padding: 10px 14px;
+}
+.footer_area input::placeholder{
+    color: #666666;
+}
+.footer_icon{
+    margin-top: 30px;
+}
+.footer_icon i{
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    margin-right: 6px;
+    transition: all .3s linear;
+}
+.footer_icon i:hover{
+    background: #0083ff;
+    border: 1px solid #0083ff;
+}
+
+.footer_elements ul li a{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all .3s linear;
+}
+.footer_elements ul li a i{
+    color: white;
+    padding-bottom: 16px;
+    margin-right: 4px;
+}
+
+/*================================
+        FOOTER CSS END
+================================*/
+
+
+
+
+
+.footer_bottom{
+    background: #000757;
+    color: white;
+}
+.footer_bottom p{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 39px;
+    padding-bottom: 40px;
+    margin: 0;
+    font-size: 14px;
+}
+.footer_nav ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 0;
+    display: inline-block;
+    padding: 43px 16px;
+}
