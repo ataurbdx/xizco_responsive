@@ -13,7 +13,7 @@
 .header_top_text {
     padding: 0;
     margin: 0;
-    padding: 18px 0;
+    padding: 14px 0;
     font-size: 14px;
     box-sizing: border-box;
     text-transform: uppercase;
@@ -44,10 +44,13 @@
 }
 
 .header {
-    /*    padding: 34px 0;*/
-    padding-top: 32px;
-    padding-bottom: 31px;
+    padding: 18px 0;
 }
+.logo{
+    margin: 5px 0;
+    padding: 10px 0;
+}
+
 
 .header_contact {}
 
@@ -55,24 +58,39 @@
     box-sizing: border-box;
     display: inline-block;
     line-height: 1;
+    margin: 5px 0;
     margin-left: 37px;
+/*
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    width: 0;
+*/
+    display: none;
 }
 
 .contact_icone {
-    float: left;
     font-size: 30px;
-    margin-right: 28px;
+    margin-right: 14px;
+    text-align: center;
 }
 
 .contact_icone i {
+    width: 50px;
+    height: 50px;
+    background: #f5f8ff;
+    border-radius: 50%;
     color: #0083ff;
+    line-height: 50px;
+    display: inline-block;
 }
 
 .contact_content {
-    float: right;
     font-family: 'Hind', sans-serif;
     font-size: 14px;
     color: #666666;
+    padding: 9px 0;
+    display: inline-block;
 }
 
 .contact_content span {
@@ -82,12 +100,11 @@
 .main_menu {
     background: #000757;
     color: white;
-    height: 50px;
-    overflow: hidden;
+/*    height: 50px;*/
 }
 .main_menu .search_bar{
     position: absolute;
-    left: 80.2%;
+    left: 78.8%;
     top: 0;
     z-index: 999;
 }
@@ -95,24 +112,32 @@
 .menu_search{
     margin: 0 auto;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 49.9%;
     width: 59%;
-/*    background: red;*/
-    
-    
-    transform: translate(-50%, 120%);
+/*    height: 56%;*/
+    height: 46%;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -100%);
     transition: all .3s linear;
 }
 .menu_search input{
     width: 100%;
+    height: 27px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+/*    color: red;*/
 }
 .search_active{
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 40%);
+    opacity: 1;
+    visibility: visible;
 }
 
 .menu_bar {
-    background: gray;
+    background: #f5f8ff;
     text-align: center;
 }
 
@@ -142,19 +167,38 @@
 .main_menu .navbar-nav .nav-item .nav-link:hover:before {
     width: 30px;
 }
+.navbar-toggler {
+        color: white !important;
+        font-size: 31px;
+        border: 0;
+    padding: 5px 10px;
+    }
+.special_nav {
+        margin-right: 54px;
+    }
 
 .search_bar {
     border: none;
     background: transparent;
     color: white;
-    padding: 18px 19px;
+    padding: 13px 19px;
 }
 .navbar-nav{
     margin-top: 0;
     transition: all .3s linear;
 }
 .menu_hide{
-    margin-top: -64px;
+/*    transform: translateY(100%);*/
+/*    display: none;*/
+    opacity: 0;
+    visibility: hidden;
+    height: 50px;
+    transition: all .3s linear;
+}
+.menu_inactive{
+    overflow: hidden;
+    display: none;
+    transition: all .3s linear;
 }
 
 
@@ -322,8 +366,8 @@
     height: 300px;
     background: #eaeaea;
     padding: 150px 1px;
-    display: flex;
     justify-content: center;
+    display: none;
 }
 
 
@@ -794,7 +838,7 @@
     line-height: 68px;
     margin-left: 30px;
     padding-left: 20px;
-    width: 82%;
+    width: 86%;
 }
 
 .faq_btn {}
@@ -883,9 +927,15 @@
     padding-top: 15px;
     padding-bottom: 10px;
 }
+.single_price p:nth-child(1),
+.single_price p:nth-child(3),
+.single_price p:nth-child(5){
+    background: #f5f8ff;
+}
 
 .last_price {
     margin-bottom: 48px;
+    background: #f5f8ff;
 }
 
 .single_price .theme_btn {
@@ -1094,9 +1144,7 @@
 }
 .footer_header{}
 .footer_header h4{
-/*    padding-top: 5px;*/
     padding-bottom: 11px;
-/*    background: red;*/
     position: relative;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -1115,21 +1163,23 @@
     padding-bottom: 10px;
 }
 .footer_elements p{
-    
     padding-bottom: 23px;
+}
+.footer_elements span{
+    font-size: 14px;
+    font-weight: 400;
 }
 .footer_elements form{
     background: #ffffff;
     padding: 5px;
 }
 .footer_elements form input{
-    width: 100%;
+    width: 50%;
     color: #666666;
     padding-left: 6px;
 }
 .footer_elements form input.form_data{
-    height: 100%;
-    width: 100%;
+    width: 58%;
     border-bottom: 0;
 }
 .footer_elements form .theme_btn.form_btn{
@@ -1164,6 +1214,9 @@
     font-weight: 400;
     transition: all .3s linear;
 }
+.footer_elements ul li a.special{
+    font-size: 12px;
+}
 .footer_elements ul li a i{
     color: white;
     padding-bottom: 16px;
@@ -1181,20 +1234,22 @@
 .footer_bottom{
     background: #000757;
     color: white;
+    padding: 15px 0;
 }
 .footer_bottom p{
     font-family: 'Montserrat', sans-serif;
-    padding-top: 39px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     margin: 0;
     font-size: 14px;
+    text-align: center;
 }
+
 .footer_nav ul li a{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: white;
-    padding: 0;
     display: inline-block;
-    padding: 43px 16px;
+    padding: 28px 16px;
 }

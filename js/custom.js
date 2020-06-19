@@ -5,9 +5,25 @@ $(function () {
         $(".navbar-nav").toggleClass("menu_hide");
         
         $(".menu_search").toggleClass("search_active");
+        $(".menu_height").removeClass("menu_inactive");
+        
+        $(".navbar-nav").removeClass("menu_inactive");
+//        $(".menu_height").addClass("menu_inactive");
         
 
     });
+    
+    $(".menu_icon").click(function () {
+        
+        $(".menu_search").removeClass(" search_active");
+        
+        $(".navbar-nav").removeClass("menu_hide");
+        
+//        $(".menu_height").toogleClass("menu_active");
+        
+
+    });
+    
     
     
     

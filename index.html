@@ -69,10 +69,12 @@
         <div class="container">
             <div class="header">
                 <div class="row">
-                    <div class="col-lg-2">
-                        <a href="index.html">
-                            <img src="images/logo.png">
-                        </a>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" class="w-100">
+                            </a>
+                        </div>
                     </div>
 
                     <div class="col-lg-10">
@@ -80,37 +82,33 @@
                         <div class="header_contact d-flex justify-content-end">
 
                             <div class="contact">
+                                <a href="#" class="contact_icone">
+                                    <i class="fa fa-phone"></i>
+                                </a>
                                 <div class="contact_content">
                                     <span class="d-block pb-2">0-123-456-7890</span>
                                     <span class="d-block">0-123-456-7890</span>
                                 </div>
-                                <div class="contact_icone">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <div class="clr"></div>
                             </div>
 
                             <div class="contact">
+                                <a href="#" class="contact_icone">
+                                    <i class="fa fa-inbox"></i>
+                                </a>
                                 <div class="contact_content">
                                     <span class="d-block pb-2">Yourinfo@email.com</span>
                                     <span class="d-block">Yourinfo@email.com</span>
                                 </div>
-                                <div class="contact_icone">
-                                    <i class="fa fa-inbox"></i>
-                                </div>
-                                <div class="clr"></div>
                             </div>
 
                             <div class="contact">
+                                <a href="#" class="contact_icone">
+                                    <i class="fa fa-home"></i>
+                                </a>
                                 <div class="contact_content">
-                                    <span class="d-block pb-2">1100 Street Address, Road No
-                                    </span>
+                                    <span class="d-block pb-2">1100 Street Address, Road No</span>
                                     <span class="d-block">1100 New York,NY 1000, U.S.A</span>
                                 </div>
-                                <div class="contact_icone">
-                                    <i class="fa fa-home"></i>
-                                </div>
-                                <div class="clr"></div>
                             </div>
 
                         </div>
@@ -129,10 +127,10 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg navbar-light main_menu p-0">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fa fa-bars"></i>
+                                <i class="fa fa-bars menu_icon"></i>
                             </button>
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse menu_height" id="navbarSupportedContent">
                                 <ul class="navbar-nav ml-0 mx-lg-auto">
                                     <li class="nav-item dropdown active">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -168,24 +166,26 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Blog</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item special_nav">
                                         <a class="nav-link" href="#">Contact</a>
                                     </li>
 
-                                    
+
 
                                 </ul>
-                                
+
 
                             </div>
-                            <button class="search_bar">
-                                        <i class="fa fa-search"></i>
-                                    </button>
+                            <form>
+                                <button class="search_bar">
+                                    <i class="fa fa-search"></i>
+                                </button>
 
-                            
-                            <div class="menu_search">
-                                <input type="text" placeholder="Search..">
-                            </div>
+
+                                <div class="menu_search">
+                                    <input type="text" placeholder="Search..">
+                                </div>
+                            </form>
 
                         </nav>
                     </div>
@@ -510,7 +510,7 @@
                             <img src="images/work_image_01.png" class="w-100">
                             <div class="overlay text-center position-absolute d-flex align-items-center justify-content-center">
                                 <div class="overlay_elements">
-                                    <a class="work_item" data-gall="gallery01" href="images/work_image_01.png">
+                                    <a class="work_item" data-gall="Finance" data-gall="Develop" href="images/work_image_01.png">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
 
@@ -532,7 +532,7 @@
                             <img src="images/work_image_02.png" class="w-100">
                             <div class="overlay text-center position-absolute d-flex align-items-center justify-content-center">
                                 <div class="overlay_elements">
-                                    <a href="#">
+                                    <a class="work_item" data-gall="Design" data-gall="Digital" href="images/work_image_02.png">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
 
@@ -554,7 +554,7 @@
                             <img src="images/work_image_03.png" class="w-100">
                             <div class="overlay text-center position-absolute d-flex align-items-center justify-content-center">
                                 <div class="overlay_elements">
-                                    <a href="#">
+                                    <a class="work_item" data-gall="Develop" href="images/work_image_03.png">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
 
@@ -576,7 +576,7 @@
                             <img src="images/work_image_04.png" class="w-100">
                             <div class="overlay text-center position-absolute d-flex align-items-center justify-content-center">
                                 <div class="overlay_elements">
-                                    <a href="#">
+                                    <a class="work_item" data-gall="Finance" data-gall="Business" data-gall="Digital" href="images/work_image_04.png">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
 
@@ -598,7 +598,7 @@
                             <img src="images/work_image_03.png" class="w-100">
                             <div class="overlay text-center position-absolute d-flex align-items-center justify-content-center">
                                 <div class="overlay_elements">
-                                    <a href="#">
+                                    <a class="work_item" data-gall="Design" data-gall="Business" data-gall="Develop" href="images/work_image_03.png">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
 
@@ -620,7 +620,7 @@
                             <img src="images/work_image_01.png" class="w-100">
                             <div class="overlay text-center position-absolute d-flex align-items-center justify-content-center">
                                 <div class="overlay_elements">
-                                    <a href="#">
+                                    <a class="work_item" data-gall="Finance" data-gall="Business" data-gall="Digital" href="images/work_image_01.png">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
 
@@ -642,7 +642,7 @@
                             <img src="images/work_image_05.png" class="w-100">
                             <div class="overlay text-center position-absolute d-flex align-items-center justify-content-center">
                                 <div class="overlay_elements">
-                                    <a href="#">
+                                    <a class="work_item" data-gall="Finance" data-gall="Design" data-gall="Business" data-gall="Develop" href="images/work_image_05.png">
                                         <i class="fa fa-link" aria-hidden="true"></i>
                                     </a>
 
@@ -859,8 +859,8 @@
                 <div class="col-lg-6 text-left">
                     <div class="section_tittle">
                         <div class="tittles_text">
-                            <h2>our experienced advisor
-                                team members</h2>
+                            <h2>client says about xizco
+                                our testimnial </h2>
                             <span></span>
                         </div>
                     </div>
@@ -1017,8 +1017,8 @@
                 <div class="col-lg-6 offset-0 offset-lg-3 text-center">
                     <div class="section_tittle">
                         <div class="tittles_text">
-                            <h2>our experienced advisor
-                                team members</h2>
+                            <h2>our OFFERING PRICE
+                                PRICING TABLE</h2>
                             <span></span>
                         </div>
                     </div>
@@ -1036,11 +1036,11 @@
                                 <span class="date">/M</span>
                             </div>
                         </div>
-                        <p class="bg-primary">Market Analysis</p>
+                        <p class="">Market Analysis</p>
                         <p>Business Planing</p>
-                        <p class="bg-primary">Growth Expension</p>
+                        <p class="">Growth Expension</p>
                         <p>Business Developing</p>
-                        <p class="bg-primary last_price">Support 24/7</p>
+                        <p class="last_price">Support 24/7</p>
                         <a href="#" class="theme_btn">Read More</a>
                     </div>
                 </div>
@@ -1054,11 +1054,11 @@
                                 <span class="date">/M</span>
                             </div>
                         </div>
-                        <p class="bg-primary">Market Analysis</p>
+                        <p class="">Market Analysis</p>
                         <p>Business Planing</p>
-                        <p class="bg-primary">Growth Expension</p>
+                        <p class="">Growth Expension</p>
                         <p>Business Developing</p>
-                        <p class="bg-primary last_price">Support 24/7</p>
+                        <p class=" last_price">Support 24/7</p>
                         <a href="#" class="theme_btn">Read More</a>
                     </div>
                 </div>
@@ -1072,11 +1072,11 @@
                                 <span class="date">/M</span>
                             </div>
                         </div>
-                        <p class="bg-primary">Market Analysis</p>
+                        <p class="">Market Analysis</p>
                         <p>Business Planing</p>
-                        <p class="bg-primary">Growth Expension</p>
+                        <p class="">Growth Expension</p>
                         <p>Business Developing</p>
-                        <p class="bg-primary last_price">Support 24/7</p>
+                        <p class=" last_price">Support 24/7</p>
                         <a href="#" class="theme_btn">Read More</a>
                     </div>
                 </div>
@@ -1090,11 +1090,11 @@
                                 <span class="date">/M</span>
                             </div>
                         </div>
-                        <p class="bg-primary">Market Analysis</p>
+                        <p class="">Market Analysis</p>
                         <p>Business Planing</p>
-                        <p class="bg-primary">Growth Expension</p>
+                        <p class="">Growth Expension</p>
                         <p>Business Developing</p>
-                        <p class="bg-primary last_price">Support 24/7</p>
+                        <p class=" last_price">Support 24/7</p>
                         <a href="#" class="theme_btn">Read More</a>
                     </div>
                 </div>
@@ -1126,8 +1126,8 @@
                         <div class="col-lg-6 offset-0 offset-lg-3 text-center">
                             <div class="section_tittle">
                                 <div class="tittles_text">
-                                    <h2>our experienced advisor
-                                        team members</h2>
+                                    <h2>want to contact with us
+                                        send a message</h2>
                                     <span></span>
                                 </div>
                             </div>
@@ -1181,8 +1181,8 @@
                 <div class="col-lg-6 offset-0 offset-lg-3 text-center">
                     <div class="section_tittle">
                         <div class="tittles_text">
-                            <h2>our experienced advisor
-                                team members</h2>
+                            <h2>check our letest news
+                                blog news</h2>
                             <span></span>
                         </div>
                     </div>
@@ -1286,7 +1286,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-6">
                     <div class="footer_content">
                         <div class="footer_header">
                             <h4>about</h4>
@@ -1308,7 +1308,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3">
+                <div class="col-xl-3 col-lg-6 col-md-8 col-sm-7">
                     <div class="footer_content">
                         <div class="footer_header">
                             <h4>Our Blog</h4>
@@ -1334,7 +1334,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2">
+                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-5">
                     <div class="footer_content">
                         <div class="footer_header">
                             <h4>Links</h4>
@@ -1347,7 +1347,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#" class="special">
                                         <i class="fa fa-arrow-right"></i>Company and IOSS Polici
                                     </a>
                                 </li>
@@ -1376,7 +1376,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-xl-4 col-lg-8">
                     <div class="footer_content">
                         <div class="footer_header">
                             <h4>Flickers</h4>
@@ -1388,27 +1388,27 @@
                                 </div>
 
                                 <div class="col-3 mb-30">
-                                    <img src="images/footer_img_01.png" class="w-100">
+                                    <img src="images/footer_img_02.png" class="w-100">
                                 </div>
 
                                 <div class="col-3 mb-30">
-                                    <img src="images/footer_img_01.png" class="w-100">
+                                    <img src="images/footer_img_03.png" class="w-100">
                                 </div>
 
                                 <div class="col-3 mb-30">
-                                    <img src="images/footer_img_01.png" class="w-100">
+                                    <img src="images/footer_img_04.png" class="w-100">
                                 </div>
 
                                 <div class="col-3">
-                                    <img src="images/footer_img_01.png" class="w-100">
+                                    <img src="images/footer_img_04.png" class="w-100">
                                 </div>
 
                                 <div class="col-3">
-                                    <img src="images/footer_img_01.png" class="w-100">
+                                    <img src="images/footer_img_03.png" class="w-100">
                                 </div>
 
                                 <div class="col-3">
-                                    <img src="images/footer_img_01.png" class="w-100">
+                                    <img src="images/footer_img_02.png" class="w-100">
                                 </div>
 
                                 <div class="col-3">
@@ -1480,4 +1480,6 @@
     <script src="js/custom.js"></script>
     <!--JAVA SCRIPT END-->
 
-</body></html>
+</body>
+
+</html>
