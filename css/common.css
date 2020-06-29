@@ -99,12 +99,13 @@ button:focus{
 
 :root{
 /*    --themeColor: #000757;*/
-    --themeColor: #666666;
+    --themeColor: green;
 /*    --btnColor: #0083ff;*/
     --btnColor: red;
 /*    --overlayColor: rgba(0, 7, 87, 0.6);*/
-    --overlayColor: rgba(102, 102, 102, 0.6);
+    --overlayColor: rgba(0, 128, 0, 0.6);
 }
+
 
 
 

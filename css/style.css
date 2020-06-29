@@ -7,7 +7,16 @@
 .header_top {
     background: var(--themeColor);
     color: white;
-
+    position: relative;
+}
+.picker_wrap{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 15%);
+}
+.picker_wrap div{
+    margin: 5px;
 }
 
 .header_top_text {
@@ -97,6 +106,10 @@
 .contact_content span {
     line-height: 12px;
 }
+.menu_bar {
+    background: #f5f8ff;
+    text-align: center;
+}
 
 .main_menu {
     background: var(--themeColor);
@@ -140,10 +153,7 @@
     visibility: visible;
 }
 
-.menu_bar {
-    background: #f5f8ff;
-    text-align: center;
-}
+
 
 .main_menu .navbar-nav .nav-item .nav-link {
     font-family: 'Montserrat', sans-serif;
