@@ -23,6 +23,7 @@
 body{
     font-family: 'Hind', sans-serif;
     line-height: 1;
+    font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -43,8 +44,14 @@ ul{
     list-style: none;
 }
 
+a{
+    color: var(--btnColor);
+}
+
 a:hover{
     text-decoration: none;
+    color: white;
+/*    color: var(--btnColor);*/
 }
 
 /*
@@ -76,11 +83,27 @@ img{
     background-attachment: fixed !important;
 }
 
+.bg_cover_sp{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
 .active{
+    color: var(--btnColor);
 }
 
 button:focus{
     outline: 0;
+}
+
+:root{
+/*    --themeColor: #000757;*/
+    --themeColor: #666666;
+/*    --btnColor: #0083ff;*/
+    --btnColor: red;
+/*    --overlayColor: rgba(0, 7, 87, 0.6);*/
+    --overlayColor: rgba(102, 102, 102, 0.6);
 }
 
 
@@ -88,7 +111,7 @@ button:focus{
 /*all button are here*/
 
 .theme_btn{
-    color: #000757;
+/*    color: #000757;*/
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -99,13 +122,13 @@ button:focus{
 }
 .theme_btn:hover{
     color: white;
-    border: 1px solid #0083ff;
-    background: #0083ff;
+    border: 1px solid var(--btnColor);
+    background: var(--btnColor);
 }
 .btn_active{
     color: white;
-    border: 1px solid #0083ff;
-    background: #0083ff;
+    border: 1px solid var(--btnColor);
+    background: var(--btnColor);
 }
 
 
@@ -122,7 +145,7 @@ section{
 }
 .section_tittle h2{
     font-size: 30px;
-    color: #000757;
+    color: var(--themeColor);
     text-transform: uppercase;
     line-height: 44px;
     padding-bottom: 8px;
@@ -139,7 +162,7 @@ section{
     content: '';
     width: 30px;
     height: 5px;
-    background: #0083ff;
+    background: var(--btnColor);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

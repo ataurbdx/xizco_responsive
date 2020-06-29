@@ -5,7 +5,7 @@
 .header_part {}
 
 .header_top {
-    background: #000757;
+    background: var(--themeColor);
     color: white;
 
 }
@@ -39,14 +39,15 @@
 }
 
 .header_link a i:hover {
-    background: #0083ff;
-    border: 1px solid #0083ff;
+    background: var(--btnColor);
+    border: 1px solid var(--btnColor);
 }
 
 .header {
     padding: 18px 0;
 }
-.logo{
+
+.logo {
     margin: 5px 0;
     padding: 10px 0;
 }
@@ -60,7 +61,7 @@
     line-height: 1;
     margin: 5px 0;
     margin-left: 37px;
-/*
+    /*
     visibility: hidden;
     opacity: 0;
     height: 0;
@@ -80,7 +81,7 @@
     height: 50px;
     background: #f5f8ff;
     border-radius: 50%;
-    color: #0083ff;
+    color: var(--btnColor);
     line-height: 50px;
     display: inline-block;
 }
@@ -98,39 +99,42 @@
 }
 
 .main_menu {
-    background: #000757;
+    background: var(--themeColor);
     color: white;
-/*    height: 50px;*/
+    /*    height: 50px;*/
 }
-.main_menu .search_bar{
+
+.main_menu .search_bar {
     position: absolute;
     left: 78.8%;
     top: 0;
     z-index: 999;
 }
 
-.menu_search{
+.menu_search {
     margin: 0 auto;
     position: absolute;
     top: 0;
     left: 49.9%;
     width: 59%;
-/*    height: 56%;*/
+    /*    height: 56%;*/
     height: 46%;
     opacity: 0;
     visibility: hidden;
     transform: translate(-50%, -100%);
     transition: all .3s linear;
 }
-.menu_search input{
+
+.menu_search input {
     width: 100%;
     height: 27px;
     padding: 5px;
     border-radius: 5px;
     border: 0;
-/*    color: red;*/
+    /*    color: red;*/
 }
-.search_active{
+
+.search_active {
     transform: translate(-50%, 40%);
     opacity: 1;
     visibility: visible;
@@ -140,7 +144,6 @@
     background: #f5f8ff;
     text-align: center;
 }
-
 
 .main_menu .navbar-nav .nav-item .nav-link {
     font-family: 'Montserrat', sans-serif;
@@ -167,15 +170,37 @@
 .main_menu .navbar-nav .nav-item .nav-link:hover:before {
     width: 30px;
 }
+
+.main_menu .navbar-nav .nav-item{
+    position: relative;
+}
+.main_menu .navbar-nav .nav-item > .submenu{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: white;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+/*    text-align: left;*/
+}
+.main_menu .navbar-nav .nav-item:hover > .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .navbar-toggler {
-        color: white !important;
-        font-size: 31px;
-        border: 0;
+    color: white !important;
+    font-size: 31px;
+    border: 0;
     padding: 5px 10px;
-    }
+}
+
 .special_nav {
-        margin-right: 54px;
-    }
+    margin-right: 54px;
+}
 
 .search_bar {
     border: none;
@@ -183,19 +208,22 @@
     color: white;
     padding: 13px 19px;
 }
-.navbar-nav{
+
+.navbar-nav {
     margin-top: 0;
     transition: all .3s linear;
 }
-.menu_hide{
-/*    transform: translateY(100%);*/
-/*    display: none;*/
+
+.menu_hide {
+    /*    transform: translateY(100%);*/
+    /*    display: none;*/
     opacity: 0;
     visibility: hidden;
     height: 50px;
     transition: all .3s linear;
 }
-.menu_inactive{
+
+.menu_inactive {
     overflow: hidden;
     display: none;
     transition: all .3s linear;
@@ -233,7 +261,7 @@
 .banner_overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 7, 87, 0.6);
+    background: var(--overlayColor);
     color: white;
 }
 
@@ -246,7 +274,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 60;
     font-weight: 700;
-/*    margin-top: 226px;*/
+    /*    margin-top: 226px;*/
     margin-bottom: 22px;
     text-transform: uppercase;
     line-height: 76px;
@@ -254,8 +282,8 @@
 
 .slider_content .theme_btn {
     color: white;
-    border: 2px solid #0083ff;
-    background: #0083ff;
+    border: 2px solid var(--btnColor);
+    background: var(--btnColor);
 }
 
 .banner_area .slick-dots {
@@ -281,7 +309,7 @@
 }
 
 .banner_area .slick-dots li.slick-active button {
-    background: #0083ff;
+    background: var(--btnColor);
 }
 
 /*================================
@@ -307,13 +335,14 @@
 ================================*/
 
 .about_area {
-	padding-top: 123px;
-	padding-bottom: 78px;
+    padding-top: 123px;
+    padding-bottom: 78px;
 }
 
-.business_wrap{
+.business_wrap {
     margin-top: -3px;
 }
+
 .business {
     position: relative;
     padding-top: 5px;
@@ -323,14 +352,14 @@
 }
 
 .business:hover .icon {
-    background: #0083ff;
+    background: var(--btnColor);
 }
 
 .business .icon {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    background: #000757;
+    background: var(--themeColor);
     text-align: center;
     border-radius: 50%;
     position: absolute;
@@ -353,7 +382,7 @@
     padding-bottom: 21px;
     text-transform: uppercase;
     font-size: 18px;
-    color: #000757;
+    color: var(--themeColor);
 }
 
 .business .text p {
@@ -379,7 +408,7 @@
     padding-bottom: 21px;
     text-transform: uppercase;
     font-size: 24px;
-    color: #000757;
+    color: var(--themeColor);
 }
 
 .business_help .text p {
@@ -423,8 +452,8 @@
 
 .single_service:hover .theme_btn,
 .single_service:hover .icon {
-    background: #0083ff;
-    border: 1px solid #0083ff;
+    background: var(--btnColor);
+    border: 1px solid var(--btnColor);
     color: white;
 }
 
@@ -432,9 +461,9 @@
     width: 48px;
     height: 48px;
     line-height: 48px;
-    background: #000757;
+    background: var(--themeColor);
     text-align: center;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     border-radius: 50%;
     position: absolute;
     top: 8px;
@@ -452,7 +481,7 @@
     padding: 26px 0;
     text-transform: uppercase;
     font-size: 18px;
-    color: #000757;
+    color: var(--themeColor);
 }
 
 .single_service .text p {
@@ -497,14 +526,16 @@
     margin: 15px 0;
 }
 
-.work_img img {}
+.work_img img {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
 
 .work_img .overlay {
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    background: rgba(0, 7, 87, 0.6);
+    background: var(--overlayColor);
     color: white;
     opacity: 0;
     visibility: hidden;
@@ -520,7 +551,7 @@
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background: #0083ff;
+    background: var(--btnColor);
     color: white;
     border-radius: 50%;
     margin: 8px;
@@ -549,10 +580,12 @@
         COUNTERUP CSS START
 ================================*/
 
-.counterup_area {}
+.counterup_area {
+    clip-path: polygon(50% 13%, 100% 0, 100% 35%, 100% 100%, 79% 88%, 50% 100%, 20% 90%, 0 100%, 0% 35%, 0 0);
+}
 
 .counter_overlay {
-    background: rgba(0, 7, 87, 0.6);
+    background: var(--overlayColor);
     padding: 80px 0;
     padding-bottom: 70px;
     color: white;
@@ -568,7 +601,7 @@
     height: 104px;
     line-height: 104px;
     border-radius: 50%;
-    background: #000757;
+    background: var(--themeColor);
     margin-bottom: 8px;
 }
 
@@ -644,13 +677,13 @@
     border-radius: 50%;
     margin: 0 3px;
     margin-bottom: 26px;
-    color: #000757;
+    color: var(--themeColor);
     transition: all .3s linear;
 }
 
 .team_icon i:hover {
-    background: #0083ff;
-    border: 1px solid #0083ff;
+    background: var(--btnColor);
+    border: 1px solid var(--btnColor);
     color: white;
 
 }
@@ -664,7 +697,7 @@
 }
 
 .team_text h5.name {
-    color: #000757;
+    color: var(--themeColor);
 }
 
 .team_text p {
@@ -746,7 +779,7 @@
 }
 
 .review_text h5 {
-    color: #000757;
+    color: var(--themeColor);
 }
 
 .feedback_area .slick-dots {
@@ -765,13 +798,13 @@
     height: 10px;
     border-radius: 50%;
     border: 1px solid #f5f5f7;
-    background: #000757;
+    background: var(--themeColor);
     margin-right: 6px;
     transition: all .3s linear;
 }
 
 .feedback_area .slick-dots li.slick-active button {
-    background: #0083ff;
+    background: var(--btnColor);
 }
 
 
@@ -800,13 +833,13 @@
     width: 70px;
     height: 70px;
     background: transparent;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     position: relative;
 }
 
 .faq_header span {
     display: inline-block;
-    background: #000757;
+    background: var(--themeColor);
 }
 
 .faq_header button span:nth-of-type(1) {
@@ -831,10 +864,10 @@
 .faq_header h4 {
     /*    background-color: red;*/
     text-transform: uppercase;
-    color: #000757;
+    color: var(--themeColor);
     font-size: 18px;
     font-weight: 600;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     line-height: 68px;
     margin-left: 30px;
     padding-left: 20px;
@@ -845,7 +878,7 @@
 
 .faq_body {
     width: 81.5%;
-    border: 1px solid #000757;
+    border: 1px solid var(--themeColor);
     padding: 25px 20px;
     padding-bottom: 20px;
     margin-left: auto;
@@ -880,12 +913,12 @@
 }
 
 .single_price:hover .price {
-    background: #0083ff;
+    background: var(--btnColor);
 }
 
 .single_price h4 {
     font-size: 24px;
-    color: #000757;
+    color: var(--themeColor);
     background: #f5f8ff;
     padding-top: 27px;
     padding-bottom: 84px;
@@ -899,7 +932,7 @@
 .price {
     width: 120px;
     height: 120px;
-    background: #000757;
+    background: var(--themeColor);
     color: white;
     line-height: 120px;
     border: 5px solid #eaeaea;
@@ -927,9 +960,10 @@
     padding-top: 15px;
     padding-bottom: 10px;
 }
+
 .single_price p:nth-child(1),
 .single_price p:nth-child(3),
-.single_price p:nth-child(5){
+.single_price p:nth-child(5) {
     background: #f5f8ff;
 }
 
@@ -950,8 +984,8 @@
 }
 
 .single_price:hover .theme_btn {
-    background: #0083ff;
-    border: 1px solid #0083ff;
+    background: var(--btnColor);
+    border: 1px solid var(--btnColor);
     color: white;
 }
 
@@ -971,12 +1005,14 @@
         MESSAGE CSS START
 ================================*/
 
-.message_area {}
+.message_area {
+    clip-path: polygon(50% 13%, 100% 0, 100% 35%, 100% 100%, 79% 88%, 50% 100%, 20% 90%, 0 100%, 0% 35%, 0 0);
+}
 
 .message_cover {}
 
 .message_overlay {
-    background: rgba(0, 7, 87, 0.6);
+    background: var(--overlayColor);
     padding: 80px 0;
     padding-bottom: 85px;
     color: white;
@@ -1002,9 +1038,9 @@
 
 .form_btn.theme_btn {
     color: white;
-    background: #0083ff;
+    background: var(--btnColor);
     margin-top: 15px;
-    border: 1px solid #0083ff;
+    border: 1px solid var(--btnColor);
     margin-bottom: 15px;
 }
 
@@ -1069,7 +1105,7 @@
 .news_text h4 {
     font-size: 18px;
     font-weight: 600;
-    color: #000757;
+    color: var(--themeColor);
     padding: 27px 0;
 }
 
@@ -1134,22 +1170,26 @@
         FOOTER CSS START
 ================================*/
 
-.footer_area{
-    background: #000757;
+.footer_area {
+    background: var(--themeColor);
     color: white;
     border-bottom: 1px solid #ffffff;
 }
-.footer_content{
+
+.footer_content {
     margin-top: 13px;
 }
-.footer_header{}
-.footer_header h4{
+
+.footer_header {}
+
+.footer_header h4 {
     padding-bottom: 11px;
     position: relative;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
-.footer_header h4:after{
+
+.footer_header h4:after {
     position: absolute;
     content: '';
     width: 40px;
@@ -1158,41 +1198,51 @@
     bottom: 0;
     background: white;
 }
-.footer_elements{
+
+.footer_elements {
     padding-top: 11px;
     padding-bottom: 10px;
 }
-.footer_elements p{
+
+.footer_elements p {
     padding-bottom: 23px;
 }
-.footer_elements span{
+
+.footer_elements span {
     font-size: 14px;
     font-weight: 400;
 }
-.footer_elements form{
+
+.footer_elements form {
     background: #ffffff;
     padding: 5px;
 }
-.footer_elements form input{
+
+.footer_elements form input {
     width: 50%;
     color: #666666;
     padding-left: 6px;
 }
-.footer_elements form input.form_data{
+
+.footer_elements form input.form_data {
     width: 58%;
     border-bottom: 0;
 }
-.footer_elements form .theme_btn.form_btn{
+
+.footer_elements form .theme_btn.form_btn {
     margin: 0;
     padding: 10px 14px;
 }
-.footer_area input::placeholder{
+
+.footer_area input::placeholder {
     color: #666666;
 }
-.footer_icon{
+
+.footer_icon {
     margin-top: 30px;
 }
-.footer_icon i{
+
+.footer_icon i {
     width: 28px;
     height: 28px;
     line-height: 28px;
@@ -1203,21 +1253,24 @@
     margin-right: 6px;
     transition: all .3s linear;
 }
-.footer_icon i:hover{
-    background: #0083ff;
-    border: 1px solid #0083ff;
+
+.footer_icon i:hover {
+    background: var(--btnColor);
+    border: 1px solid var(--btnColor);
 }
 
-.footer_elements ul li a{
+.footer_elements ul li a {
     color: white;
     font-size: 14px;
     font-weight: 400;
     transition: all .3s linear;
 }
-.footer_elements ul li a.special{
+
+.footer_elements ul li a.special {
     font-size: 12px;
 }
-.footer_elements ul li a i{
+
+.footer_elements ul li a i {
     color: white;
     padding-bottom: 16px;
     margin-right: 4px;
@@ -1231,12 +1284,13 @@
 
 
 
-.footer_bottom{
-    background: #000757;
+.footer_bottom {
+    background: var(--themeColor);
     color: white;
     padding: 15px 0;
 }
-.footer_bottom p{
+
+.footer_bottom p {
     font-family: 'Montserrat', sans-serif;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -1245,7 +1299,7 @@
     text-align: center;
 }
 
-.footer_nav ul li a{
+.footer_nav ul li a {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -1253,3 +1307,246 @@
     display: inline-block;
     padding: 28px 16px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#####################################
+**************************************/
+BLOG PAGE CSS START HERE
+/**************************************
+#####################################*/
+
+.slider_content h1 {
+    padding: 100px 0;
+    color: red !important;
+    background: red;
+}
+
+
+.cetagory_part ul,
+.archive_tittle ul {
+    margin-top: 22px;
+}
+
+.cetagory_part ul li a,
+.archive_tittle ul li a {
+    font-size: 16px;
+    color: var(--themeColor);
+    border-bottom: 1px solid var(--themeColor);
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    transition: all .3s linear;
+    color: var(--themeColor);
+}
+
+.archive_tittle ul li a.active,
+.archive_tittle ul li a:hover,
+.cetagory_part ul li a.active,
+.cetagory_part ul li a:hover {
+    color: var(--btnColor);
+}
+
+
+.blog_search {
+    /*    align-items: center;*/
+}
+
+.blog_search button {
+    color: white;
+    background: var(--btnColor);
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border: 0;
+}
+
+.blog_search input {
+    width: 100%;
+    /*    background: blue;*/
+    padding: 5px;
+}
+
+.single_post {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.post_text {
+    padding-left: 15px;
+}
+
+.post_text a {
+    color: #666666;
+    line-height: 20px;
+}
+
+.post_text a .date {
+    color: var(--themeColor);
+    font-weight: 500;
+}
+
+/*#####################################
+**************************************/
+BLOG PAGE CSS ENDS HERE
+/**************************************
+#####################################*/
+
+
+
+
+
+
+
+
+
+
+
+/*#####################################
+**************************************/
+DETAILS PAGE CSS STARTS HERE
+/**************************************
+#####################################*/
+
+.blogspot {}
+
+.blogspot_head {
+    display: flex;
+    align-items: center;
+}
+
+.time_stamp {
+    margin-left: auto;
+}
+
+.blog_pera {
+    padding-top: 11px;
+    padding-bottom: 8px;
+}
+
+.blog_qutes {
+    background: var(--themeColor);
+    margin: 15px 0;
+    padding: 30px 65px;
+}
+
+.blog_qutes p {
+    color: white;
+}
+
+.blog_social {
+    border: 1px solid var(--themeColor);
+    color: var(--themeColor);
+    margin: 15px 0;
+}
+
+.blog_tags {
+    padding: 18px 20px;
+    width: 80%;
+}
+
+.blog_tags .tag {
+    color: var(--btnColor);
+}
+
+.blog_links {
+    background: var(--themeColor);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 21%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.blog_links i {
+    color: white;
+    flex-grow: 1;
+
+}
+
+.page_btn {
+    padding: 15px 0;
+    position: relative;
+}
+
+.page_btn button {
+    width: 130px;
+}
+
+.page_btn_r {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.blog_comment {
+    padding: 30px 42px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 85px 0;
+    background: var(--themeColor)
+}
+
+.commentor_img {}
+
+.commentor_img img {
+    margin-right: 23px;
+}
+
+.commentor_text {}
+
+.commentor_text span {
+    font-weight: 600;
+    color: var(--themeColor);
+}
+
+.commentor_text p {
+    padding-top: 6px;
+    padding-bottom: 22px;
+}
+
+.comments_comment {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    color: #666666;
+}
+
+.comments_form {}
+
+.comments_form textarea,
+.comments_form input {
+    width: 100%;
+    margin: 15px 0;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    text-align: justify;
+}
+
+.comments_form textarea {
+    height: 170px;
+}
+
+/*#####################################
+**************************************/
+DETAILS PAGE CSS ENDS HERE
+/**************************************
+#####################################*/
